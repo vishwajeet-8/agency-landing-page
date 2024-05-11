@@ -266,6 +266,59 @@ nav h1 {
   color: hsl(210, 4%, 67%);
 }
 
+.pre-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pre-footer img {
+  width: 100%;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 100px 100px 200px;
+  justify-items: center;
+  background-color: #90d4c5;
+}
+
+footer h1 {
+  display: grid;
+  align-items: end;
+  font-family: "Barlow", serif;
+  color: hsl(168, 34%, 41%);
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+footer .about {
+  display: grid;
+  list-style-type: none;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  font-family: "Barlow", serif;
+  color: hsl(168, 34%, 41%);
+  font-size: 1.3rem;
+}
+
+footer .about :hover {
+  cursor: pointer;
+  color: white;
+}
+
+footer .contact {
+  display: grid;
+  list-style-type: none;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+footer .contact {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 540px) {
   header {
     background: url("./images/desktop/image-header.jpg");
@@ -404,5 +457,10 @@ nav h1 {
 
   .test .proffesion {
     font-size: 0.8rem;
+  }
+
+  .pre-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
